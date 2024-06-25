@@ -3,10 +3,12 @@
 
 #include <string>
 #include "query.h"
+#include "files.h"
 
 class DBServer {
   private:
 	  QueryServer query_server;
+	  FileManager file_manager;
   public:
     DBServer() {
     

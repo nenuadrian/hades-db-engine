@@ -14,4 +14,8 @@ class QueryServer {
 
 };
 
+class QueryPlan {
+
+};
+
 #endif
