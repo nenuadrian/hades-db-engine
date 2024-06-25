@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main(int argc, char** argv) {
-  std::cout << "hellp" << std::endl;
-
+  std::cout << "Starting server..." << std::endl;
+  auto db_server = DBServer();
   return 0;
 }
