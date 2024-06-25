@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package hades;
+
+service HadesDatabase {
+  rpc Query (QueryRequest) returns (QueryResponse) {}
+  rpc Put (PutRequest) returns (PutResponse) {}
+}
+
+message QueryRequest {
+
+}
+
+message QueryResponse {
+
+}
+
+message PutRequest {
+
+}
+
+message PutResponse {
+
+}
