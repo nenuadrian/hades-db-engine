@@ -32,6 +32,6 @@ cc_test(
     name = "query_test",
     size = "small",
     srcs = ["query_test.cc"],
-    deps = ["@com_google_googletest//:gtest_main", ":query", ":db"],
+    deps = ["@com_google_googletest//:gtest_main", ":query"],
 )
 

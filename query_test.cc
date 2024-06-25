@@ -1,8 +1,18 @@
 #include <gtest/gtest.h>
-#include "db.h"
+#include "query.h"
+#include "parser.h"
 
-TEST(DBTest, BasicStart) {
-  auto db_server = DBServer();
+TEST(QueryTest, BasicStart) {
+  auto query_server = QueryServer();
 
   EXPECT_TRUE(true);
 }
+
+TEST(QueryTest, Tokenizer) {
+  auto tokenizer = Tokenizer();
+
+  auto result = tokenizer.tokenize("SELECT * from users;");
+
+  EXPECT_EQ(result.size(), 5);
+}
+
